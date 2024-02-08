@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.global{
+    display: flex;
+}
+
+.global > section,
+.global > header,
+.global > footer{
+    width: 1100px;
+    border: 1px solid red;
+}
+
+#entete{
+    
+}
+#acceuil{}
+#galerie{}
+#evenement{}
+#footer{}
