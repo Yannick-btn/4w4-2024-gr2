@@ -5,19 +5,31 @@ body{
 
 .global{
     display: flex;
+    justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer{
-    width: 1100px;
+    // flex: grow shrink basis
+    flex:  0 1 900px;
     border: 1px solid red;
+    padding: 5rem 1rem;
+    
 }
 
 #entete{
-    
+    background-color: var(--couleur-arriere-entete);
 }
-#acceuil{}
-#galerie{}
-#evenement{}
-#footer{}
+#acceuil{
+    background-color: var(--couleur-arriere-acceuil);
+}
+#galerie{
+    background-color: var(--couleur-arriere-galerie);
+}
+#evenement{
+    background-color: var(--couleur-arriere-evenement);
+}
+#footer{
+    background-color: var(--couleur-arriere-footer);
+}

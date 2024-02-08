@@ -13,10 +13,11 @@ Text Domain: twentytwenty
 Ce theme à été développé dans le cadre du cours 4w4
 */
 :root {
-  --couleur-arriere-entete: #ccc;
-  --couleur-arriere-acceuil: #ddd;
-  --couleur-arriere-evenement: #dd1;
-  --couleur-arriere-footer: #aaa;
+  --couleur-arriere-entete: #1cadd1;
+  --couleur-arriere-acceuil: #c8db17;
+  --couleur-arriere-galerie: rgb(17, 221, 34);
+  --couleur-arriere-evenement: rgb(240, 161, 14);
+  --couleur-arriere-footer: #c521e6;
 }
 
 /*
@@ -27,6 +28,11 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4Iiwi
 
 */
 h1 {
+  font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
 }
 
@@ -37,11 +43,33 @@ body {
 
 .global {
   display: flex;
+  justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  width: 1100px;
+  flex: 0 1 900px;
   border: 1px solid red;
+  padding: 5rem 1rem;
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#acceuil {
+  background-color: var(--couleur-arriere-acceuil);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
 }/*# sourceMappingURL=style.css.map */
