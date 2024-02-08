@@ -1,30 +1,34 @@
 /*
-Theme Name: yheme
+Theme Name: theme-gr2
 Theme URI: https://referenced.ca
-Author: Yannick Bastien
+Author: Eddy Martin
 Author URI: https://wordpress.org/
-Description: theme de base développé dans le cours 4w4
+Description: Thème de base développé dans le cours 4W4
 Version: 1.0
+
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentytwenty
-Ce theme à été développé dans le cadre du cours 4w4
+Text Domain: theme-gr2
+Ce thème a été développé dans le cadre du cours 4W4
 */
 
-//https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+// https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
-// *******************//
-// variable css       //
-// *******************//
+/* ////////////////////////////////////////// */
+/* Variables css                              */
+/* ////////////////////////////////////////// */
 @import "variables";
-
-// *******************//
-// règle de base//
-// *******************//
+/* ////////////////////////////////////////// */
+/* règles de normalisation                    */
+/* ////////////////////////////////////////// */
+@import "normalize";
+/* ////////////////////////////////////////// */
+/* règles de base                             */
+/* ////////////////////////////////////////// */
 @import "base/h";
 
-// *******************//
-// règle de la pagination//
-// *******************//
+/* ////////////////////////////////////////// */
+/* règles de la pagination                             */
+/* ////////////////////////////////////////// */
 @import "layout";

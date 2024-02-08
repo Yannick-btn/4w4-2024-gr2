@@ -1,7 +1,11 @@
-:root{
-    --couleur-arriere-entete : #1cadd1;
-    --couleur-arriere-acceuil : #c8db17;
-    --couleur-arriere-galerie : rgb(17, 221, 34);
-    --couleur-arriere-evenement : rgb(240, 161, 14);
-    --couleur-arriere-footer : #c521e6;
+
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+*/
+:root {
+
+    --couleur-arriere-entete : #ccc;
+    --couleur-arriere-accueil : #ddd;
+    --couleur-arriere-evenement : #dd1;
+    --couleur-arriere-footer : #aaa;
 }

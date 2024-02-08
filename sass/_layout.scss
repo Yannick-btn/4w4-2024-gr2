@@ -1,35 +1,26 @@
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
-.global{
-    display: flex;
+.global {
+    display:flex;
     justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer{
-    // flex: grow shrink basis
-    flex:  0 1 900px;
-    border: 1px solid red;
-    padding: 5rem 1rem;
-    
+    width : 1100px;
+    border : 1px solid #aaa;
 }
 
-#entete{
+
+
+#entete {
     background-color: var(--couleur-arriere-entete);
 }
-#acceuil{
-    background-color: var(--couleur-arriere-acceuil);
-}
-#galerie{
-    background-color: var(--couleur-arriere-galerie);
-}
-#evenement{
-    background-color: var(--couleur-arriere-evenement);
-}
-#footer{
-    background-color: var(--couleur-arriere-footer);
-}
+#accueil {}
+#galerie {}
+#evenement {}
+#footer {}
