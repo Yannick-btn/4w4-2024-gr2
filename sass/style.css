@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*
+Theme Name: yheme
+Theme URI: https://referenced.ca
+Author: Yannick Bastien
+Author URI: https://wordpress.org/
+Description: theme de base développé dans le cours 4w4
+Version: 1.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+Ce theme à été développé dans le cadre du cours 4w4
+*/
+:root {
+  --couleur-arriere-entete: #ccc;
+  --couleur-arriere-acceuil: #ddd;
+  --couleur-arriere-evenement: #dd1;
+  --couleur-arriere-footer: #aaa;
+}
+
+/*
+Selecteur ballise textuelle de base
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+
+*/
+h1 {
+  font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  display: flex;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  width: 1100px;
+  border: 1px solid red;
+}/*# sourceMappingURL=style.css.map */
