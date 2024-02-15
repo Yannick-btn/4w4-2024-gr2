@@ -17,7 +17,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
     --couleur-arriere-texte: #13e21383;
 */
     --nb-element : 5;
-    --increment-angle : calc(360 / var(--nb-element));
+    --increment-angle : calc(300 / var(--nb-element));
     //360 / 5 = 72
     --angle-initial : 180;
 
@@ -34,25 +34,33 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
     --s-couleur : 100%; // saturation
     --l-couleur : 80%; // luminosité
 
-    --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    // --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    // --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    // --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    // --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    // --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
 
-    --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-    --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-    --couleur-evenement: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
-    --couleur-galerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
-    --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+    // --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+    // --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
+    // --couleur-evenement: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
+    // --couleur-galerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
+    // --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
 
 
-    /*--couleur-rouge: #851919;
+    --couleur-rouge: #851919;
     --coulleur-rose: #cc1cc3;
-    --coulleur-bleu: #1000f1;
-    --coulleur-vert-foncer: #236405;
-    --couleur-arriere-entete-texte: #1d2479;
-    --couleur-arriere-texte: #13e21383;*/
+    //--coulleur-bleu: #1000f1;
+    //--coulleur-vert-foncer: #236405;
+    //--couleur-arriere-entete-texte: #1d2479;
+    //--couleur-arriere-texte: #13e21383;*/
+
+
+    --hu2 : calc(var(--hu1) + 180); //couleur complementaire
+    --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 90%);
+    --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), 90%);
+    --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 90%);
+    --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), 90%);
+    --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), 90%);
 }
 
 

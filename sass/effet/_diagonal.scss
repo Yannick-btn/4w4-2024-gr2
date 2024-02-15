@@ -1,0 +1,19 @@
+.diagonal{
+    position: relative;
+    isolation: isolate;
+    z-index: 1;
+}
+
+.diagonal::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: skewY(-5deg);
+    background: var(--couleur-arriere-galerie);
+
+}
+
