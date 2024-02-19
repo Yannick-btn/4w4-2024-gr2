@@ -1,4 +1,13 @@
-a{
-    color: var(--couleur-rouge);
+a {
+    color: var(--couleur-lien);
     font-size: clamp(0.5rem, -0.5rem + 5vw, 2rem);
+
+    &:hover,
+    &:focus {
+        color: var(--couleur-lien-hover);
+    }
+
+    &:visited {
+        color: var(--couleur-lien-visited);
+    }
 }

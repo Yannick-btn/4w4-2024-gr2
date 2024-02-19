@@ -1,12 +1,24 @@
 button {
-    background-color: var(--coulleur-rose);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  // background-color: var(--coulleur-rose);
+  background-image: linear-gradient(90deg, var(--couleur-bouton), var(--couleur-bouton-suite) 50%);
+  border: 2px solid rgb(104, 103, 103);
+  color: rgb(51, 50, 50);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: clamp(1.375rem, 0.4375rem + 3vw, 2.5rem);
+  transition: transform 0.2s;
+
+  &:hover {
+    background-image: linear-gradient(90deg, var(--couleur-bouton-hover), var(--couleur-bouton-suite-hover) 50%);
   }
+
+  &:active {
+    background-image: linear-gradient(90deg, var(--couleur-bouton-visited), var(--couleur-bouton-suite-visited) 50%);
+    color: black;
+  }
+}
