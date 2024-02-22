@@ -227,11 +227,28 @@ button.entete__button:active {
   color: black;
 }
 
+.general__quote {
+  padding: 20px;
+  font-size: 1.5em;
+  line-height: 1.6;
+  border-radius: 5px;
+}
+
+.quote_victor {
+  background-color: #fcc4ff;
+}
+
+.quote_einstein {
+  background-color: #f4ed9f;
+}
+
 .entete__header {
   background-image: url("images/roblox.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 35%;
+  text-align: center;
+  justify-content: center;
 }
 
 .entete__header span {
@@ -239,11 +256,8 @@ button.entete__button:active {
 }
 
 @media screen and (min-width: 500px) {
-  #entete {
-    text-align: left;
-  }
   .entete__header {
-    justify-content: left;
+    text-align: left;
     background-position: 100% 50%;
   }
 }
