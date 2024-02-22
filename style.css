@@ -246,7 +246,7 @@ button.entete__button:active {
   background-image: url("images/roblox.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 35%;
+  background-size: 80%;
   text-align: center;
   justify-content: center;
 }
@@ -259,6 +259,7 @@ button.entete__button:active {
   .entete__header {
     text-align: left;
     background-position: 100% 50%;
+    background-size: 35%;
   }
 }
 .footer__section {
