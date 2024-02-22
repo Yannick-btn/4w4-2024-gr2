@@ -40,7 +40,11 @@ Ce thème a été développé dans le cadre du cours 4W4
 @import "effet/diagonal";
 
 @import "base/liens";
-
 @import "base/buttons";
+@import "base/media-query";
 
 @import "entete";
+@import "footer";
+
+@import "composants/recherche";
+@import "composants/sociaux";

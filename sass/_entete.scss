@@ -1,10 +1,21 @@
 .entete__header{
     background-image: url("images/roblox.png");
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
     background-size: 35%;
 }
 
 .entete__header span{
     display: block;
+}
+
+@media screen and (min-width: 500px){
+    #entete{
+        text-align: left;
+    }
+
+    .entete__header{
+        justify-content: left;
+        background-position: 100% 50%;
+    }
 }
