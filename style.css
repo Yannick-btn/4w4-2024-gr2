@@ -301,4 +301,19 @@ button.entete__button:active {
 
 .sociaux svg {
   fill: red;
+}
+
+.section__cours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.carte {
+  padding: 1rem;
+  border: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 25%;
 }/*# sourceMappingURL=style.css.map */
