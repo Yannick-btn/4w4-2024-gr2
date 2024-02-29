@@ -12,11 +12,10 @@
 
 ### Un Readme.md qui contiendra:
 
-- Le nom de l'auteur
-- L'objectif du labo3
-- Les réalisations
+- Yannick Bastien
+- Améliorer la page 
+- Stylisation du cite et utilisation de stingpos()
 - Un lien vers la github-page
-- Décomposé le titre de chaque cours:
 
 - sigle du cours ex: 582-4W4
 - le titre du cours ex: Conception d'interface et développement Web

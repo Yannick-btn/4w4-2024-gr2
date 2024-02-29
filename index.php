@@ -38,16 +38,34 @@
             <div class="section__cours">
 
                 <?php if (have_posts()) :
-                    while (have_posts()) : the_post(); 
-                    $titre = get_the_title(); 
-                    $sigle = substr($titre,0,7);
-                    //selectioner le nombre dheur a laide de strpos()
-                    
-                    ?>
+                    while (have_posts()) : the_post();
+                        $titre = get_the_title();
+                        $sigle = substr($titre, 0, 7);
+                        $titre2 = substr($titre, 7, -6);
+
+
+                        //selectioner le nombre dheur a laide de strpos()
+                        // Trouver les positions de la parenthèse ouvrante et fermante
+                        $ouvert = strpos($titre, '(');
+                        $fermant = strpos($titre, ')');
+                        // Si les parenthèses ouvrante et fermante sont trouvées
+                        if ($ouvert !== false && $fermant !== false) {
+                            // Calculer la longueur de la sous-chaîne entre les parenthèses
+                            $longueur_sous_chaine = $fermant - $ouvert - 1;
+
+                            // Extraire la sous-chaîne entre les parenthèses
+                            $contenu_parentheses = substr($titre, $ouvert + 1, $longueur_sous_chaine);
+                        }
+
+
+
+                ?>
                         <div class="carte">
-                        <h5> <?php echo $sigle; ?> </h5>
-                            <h4> <?php echo $titre; ?> </h4>
+                            <h5> <?php echo $sigle; ?> </h5>
+                            <h4> <?php echo $titre2; ?> </h4>
+                            
                             <p> <?php echo wp_trim_words(get_the_content(), 30); ?> </p>
+                            <h4> <?php echo $contenu_parentheses; ?> </h4>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
