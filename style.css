@@ -94,7 +94,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+  font-size: clamp(0.625rem, 0rem + 5vw, 1.875rem);
 }
 
 /* ////////////////////////////////////////// */
@@ -132,6 +132,24 @@ body {
 #accueil {
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-accueil);
+  justify-content: center;
+  display: flex;
+}
+
+.accueil__section h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.accueil__section .section__cours {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.accueil__section .section__cours .carte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #galerie {
@@ -151,6 +169,11 @@ body {
   color: var(--couleur-footer);
 }
 
+@media screen and (min-width: 500px) {
+  .accueil__section .section__cours {
+    flex-direction: row;
+  }
+}
 /* ////////////////////////////////////////// */
 .vague {
   position: absolute;
@@ -312,8 +335,10 @@ button.entete__button:active {
 .carte {
   padding: 1rem;
   border: 1px solid #aaa;
+  background-color: #ffb5b5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 25%;
+  box-shadow: rgba(214, 129, 129, 0.822) 0px 48px 100px 0px;
 }/*# sourceMappingURL=style.css.map */

@@ -37,24 +37,12 @@
             <h2>Accueil</h2>
             <div class="section__cours">
 
-                <?php
-                /* if (have_posts())
-                while (have_posts()) {
-                    the_post();
-
-                    the_title('<p>', '</p>');
-
-                    $contenu = get_the_content();
-                    $contenu = wp_trim_words($contenu, 10);
-                    echo $contenu;
-                }*/
-                ?>
-
                 <?php if (have_posts()) :
                     while (have_posts()) : the_post(); 
                     $titre = get_the_title(); 
                     $sigle = substr($titre,0,7);
-                    //strpos()
+                    //selectioner le nombre dheur a laide de strpos()
+                    
                     ?>
                         <div class="carte">
                         <h5> <?php echo $sigle; ?> </h5>
