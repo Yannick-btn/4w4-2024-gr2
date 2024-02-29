@@ -25,4 +25,4 @@
 - Une github-page
 
 #### GitHub page
- - https://yannick-btn.github.io/4w4-2024-gr2/
+ - https://github.com/Yannick-btn/4w4-2024-gr2
