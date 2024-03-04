@@ -14,7 +14,7 @@
     </div>*/
 
 .entete_menu{
-    border: 1px solid var(#aaa);
+    border: 1px solid #aaa;
     }
 
 .menu-entete-container{ //div
@@ -29,4 +29,8 @@
 }
 
 .menu-item { //li
+} 
+
+.menu-item a { //li
+    font-size: 1rem;
 } 

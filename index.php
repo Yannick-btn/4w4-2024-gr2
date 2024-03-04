@@ -15,8 +15,9 @@
 
 <body>
     <div id="menu" class="global">
-        <div class="entete_menu"></div>
+        <div class="entete_menu">
         <?php wp_nav_menu();?>
+    </div>
     </div>
     <div id="entete" class="global">
         <header class="entete__header">
