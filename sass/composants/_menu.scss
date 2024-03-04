@@ -1,0 +1,32 @@
+/*<div id="menu" class="global">
+    <div class="entete_menu"></div>
+    //generer pas wp_nav_menu()
+        <div class="menu-entete-container">
+          <ul id="menu-entete" class="menu">
+            <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4W4/2020/10/07/350-5n1-communication-et-dynamique-dune-equipe-de-travail-45h/">Communication</a></li>
+            <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4W4/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/">Méthodes de recherche</a></li>
+            <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4W4/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D</a></li>
+            <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost:8080/4W4/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">Conception graphique</a></li>
+            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost:8080/4W4/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">Création vidéo</a></li>
+          </ul>
+          </div>    
+          </div>
+    </div>*/
+
+.entete_menu{
+    border: 1px solid var(#aaa);
+    }
+
+.menu-entete-container{ //div
+    border: 1px solid #aaa;
+    width: 100%;
+}
+
+.menu { //ul
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.menu-item { //li
+} 

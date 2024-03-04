@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thème gr2</title>
-    <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/normalize.css'; ?>">
-    <link rel="stylesheet" href=" <?php echo get_template_directory_uri() . '/style.css'; ?>">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href=" http://localhost:8080/4W4/wp-content/themes/4w4-2024-gr2/normalize.css">
+    <link rel="stylesheet" href=" http://localhost:8080/4W4/wp-content/themes/4w4-2024-gr2/style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,8 +19,12 @@
 <body>
     <div id="menu" class="global">
         <div class="entete_menu"></div>
-        <?php wp_nav_menu();?>
-    </div>
+        <div class="menu-entete-container"><ul id="menu-entete" class="menu"><li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4W4/2020/10/07/350-5n1-communication-et-dynamique-dune-equipe-de-travail-45h/">Communication</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4W4/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/">Méthodes de recherche</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4W4/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost:8080/4W4/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">Conception graphique</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost:8080/4W4/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">Création vidéo</a></li>
+</ul></div>    </div>
     <div id="entete" class="global">
         <header class="entete__header">
             <h1 class="bgc-text">Thème du groupe #2</h1>
@@ -35,47 +42,11 @@
         </div>
     </div>
     <div id="accueil" class="global">
-        <?php  ?>
-        <section class="accueil__section">
+                <section class="accueil__section">
             <h2>Accueil</h2>
             <div class="section__cours">
 
-                <?php if (have_posts()) :
-                    while (have_posts()) : the_post();
-                        $titre = get_the_title();
-                        $sigle = substr($titre, 0, 7);
-                        $pos_parentese = strpos($titre, '(');
-                        $duree = substr($titre, $pos_parentese + 1 , - 1);
-                        $titre2 = substr($titre, 7, $pos_parentese - 7);
-
-
-
-                        // //selectioner le nombre dheur a laide de strpos()
-                        // // Trouver les positions de la parenthèse ouvrante et fermante
-                        // $ouvert = strpos($titre, '(');
-                        // $fermant = strpos($titre, ')');
-                        // // Si les parenthèses ouvrante et fermante sont trouvées
-                        // if ($ouvert !== false && $fermant !== false) {
-                        //     // Calculer la longueur de la sous-chaîne entre les parenthèses
-                        //     $longueur_sous_chaine = $fermant - $ouvert - 1;
-
-                        //     // Extraire la sous-chaîne entre les parenthèses
-                        //     $contenu_parentheses = substr($titre, $ouvert + 1, $longueur_sous_chaine);
-                        // }
-
-
-
-                ?>
-                        <div class="carte">
-                            <h5> <?php echo $sigle; ?> </h5>
-                            <h4> <?php echo $titre; ?> </h4>
-                            
-                            <p> <?php echo wp_trim_words(get_the_content(), 10); ?> </p>
-                            <h5> Durée:  <?php echo $duree; ?> </h5>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-
+                
             </div>
         </section>
 

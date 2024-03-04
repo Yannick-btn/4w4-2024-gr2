@@ -47,6 +47,19 @@ Ce thème a été développé dans le cadre du cours 4W4
 @import "entete";
 @import "footer";
 
+
+/* ////////////////////////////////////////// */
+/* composants                         */
+/* ////////////////////////////////////////// */
 @import "composants/recherche";
 @import "composants/sociaux";
 @import "composants/carte";
+@import "composants/menu";
+
+
+/* ////////////////////////////////////////// */
+/* utile                           */
+/* ////////////////////////////////////////// */
+@import "utile/local";
+
+

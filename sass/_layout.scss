@@ -12,12 +12,13 @@ body {
 
 .global > section,
 .global > header,
-.global > footer {
+.global > footer,
+.global > .entete_menu {
   // flex : grow shrink basis
   flex: 0 1 1100px;
   // border : 1px solid #aaa;
   // background-color : rgba(#000, .05 );
-  padding: 5rem 1rem;
+  padding: 10rem 1rem;
 }
 
 .global > header {
@@ -41,16 +42,16 @@ body {
   justify-content: center;
 }
 
-.accueil__section .section__cours {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  .carte {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+// .accueil__section .section__cours {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   .carte {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
@@ -70,12 +71,10 @@ body {
   color: var(--couleur-footer);
 }
 
-@media screen and (min-width: 500px) {
-  .accueil__section .section__cours {
-    flex-direction: row;
+// @media screen and (min-width: 500px) {
+//   .accueil__section .section__cours {
+//     flex-direction: row;
     
-  }
-//   .carte{
-//     flex: 0 1 100%;
 //   }
-}
+
+//}
