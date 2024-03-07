@@ -7,13 +7,11 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 30vh;
+  // min-height: 30vh;
 }
 
 .global > section,
-.global > header,
-.global > footer,
-.global > .entete_menu {
+.global > footer{
   // flex : grow shrink basis
   flex: 0 1 1100px;
   // border : 1px solid #aaa;
@@ -21,13 +19,15 @@ body {
   padding: 10rem 1rem;
 }
 
-.global > header {
-  flex: 0 1 1300px;
+.entete__menu, .entete__header {
+  flex: 0 1 1500px;
+  padding: 3rem 0 0 0;
+  min-height: auto;
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
-  color: var(--couleur-entete);
+  // background-color: var(--couleur-arriere-entete);
+  // color: var(--couleur-entete);
   position: relative;
 }
 #accueil {

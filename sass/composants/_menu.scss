@@ -13,24 +13,60 @@
           </div>
     </div>*/
 
-.entete_menu{
+.menu-principal-container { //nav
     border: 1px solid #aaa;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 2;
+    transform: translateX(-200%);
+    display: flex;
+    @media screen and (min-width: 700px){
+        position: static;
+        transform: translate(0);
+        
+    }
     }
 
-.menu-entete-container{ //div
-    border: 1px solid #aaa;
-    width: 100%;
-}
+// .menu-entete-container{ //div
+//     border: 1px solid #aaa;
+//     width: 100%;
+// }
 
-.menu { //ul
+#menu-principal { //ul
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (min-width: 700px){
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
 .menu-item { //li
 } 
 
-.menu-item a { //li
+.menu-item a { //li a
     font-size: 1rem;
 } 
+#chk_burger{
+    display: none;
+}
+
+
+#burger{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (min-width: 700px){
+        display: none;
+    }
+}
+
+#chk_burger:checked ~ .menu-principal-container{
+    transform: translateX(0);
+}
