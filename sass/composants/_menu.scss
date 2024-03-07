@@ -47,7 +47,10 @@
     padding: 0;
     @media screen and (min-width: 700px){
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        // flex-wrap: wrap;
+
+
     }
 }
 #menu-principal a {
@@ -57,10 +60,12 @@
 #menu-principal li a {
     text-decoration: none; /* Remove underline */
     padding: 10px; /* Adjust padding as needed */
-    color: #555; /* Set text color */
-    background-color: #f0f0f0; /* Set background color */
-    border-radius: 5px; /* Rounded corners */
-    margin: 5px; /* Add some space between menu items */
+    color: #555;
+    background-color: #f0f0f0; 
+    border-radius: 5px;
+    margin: 5px; 
+    white-space: nowrap;
+
 }
 
 
@@ -70,7 +75,7 @@
 } 
 
 .menu-item a { //li a
-    display: flex;
+    //display: flex;
     font-size: 1rem;
 } 
 
