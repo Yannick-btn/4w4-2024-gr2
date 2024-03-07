@@ -26,8 +26,9 @@ body {
 }
 
 #entete {
-  // background-color: var(--couleur-arriere-entete);
+   background-color: var(--couleur-arriere-entete);
   // color: var(--couleur-entete);
+  
   position: relative;
 }
 #accueil {
@@ -42,16 +43,6 @@ body {
   justify-content: center;
 }
 
-// .accueil__section .section__cours {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   .carte {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
@@ -70,11 +61,3 @@ body {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
 }
-
-// @media screen and (min-width: 500px) {
-//   .accueil__section .section__cours {
-//     flex-direction: row;
-    
-//   }
-
-//}

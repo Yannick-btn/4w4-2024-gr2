@@ -58,9 +58,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 #entete{
-    --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+    --_couleur-arriere-vague: var(--couleur-arriere-accueil);
 }
 
-#footer{
-    --_couleur-arriere-vague: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+#evenement{
+    --_couleur-arriere-vague:var(--couleur-arriere-footer);
 }

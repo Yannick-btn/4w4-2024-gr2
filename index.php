@@ -12,7 +12,7 @@
             <h3 class="bgc-text">TIM - Collège de Maisonneuve</h3>
             <button class="entete__button">Événements</button>
 </div>
-<?php get_template_part("gabarit/vague"); ?>
+<?php get_template_part("gabarits/vague"); ?>
     </div>
     <div id="accueil" class="global">
         <?php  ?>
@@ -59,7 +59,7 @@
             </blockquote>
             <button class="entete__button">Appuyer pour des chocolats</button>
         </section>
-        <?php get_template_part("gabarit/vague"); ?>
+        <?php get_template_part("gabarits/vague"); ?>
     </div>
     <div id="footer" class="global">
         <footer class="footer__section">
