@@ -1,4 +1,4 @@
-# Labo 4
+# TP1
 # Yannick Bastien
 ## Reproduire et améliorer la maquette exemple présenté au cours
 
@@ -6,9 +6,19 @@
 - faire des commits
 - styliser la page
 
-### obejctif du labo4
-- creer un bouton burger
-- styliser le bouton burger
+### obejctif du tp1
+- creer un site web pour un club de voyage qui permettera de mettre en valeur les differentes destination de voyage
+
+### Auteur
+### Groupe 
+
+### Description du projet:
+
+### lien URL:
+- lien vers le serveur distant whc
+- lien vers la GitHub-page de la page d'acceuil :
+
+
 #### GitHub page
 
  https://yannick-btn.github.io/4w4-2024-gr2/
