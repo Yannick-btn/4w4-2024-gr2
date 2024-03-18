@@ -16,6 +16,18 @@
     box-shadow: rgba(214, 129, 129, 0.822) 0px 48px 100px 0px;
 }
 
-.carte *{
+.carte * {
     text-align: center;
+}
+
+.cate .post-categories {
+    list-style: none;
+    display: flex;
+}
+
+@media screen and (min-width: 900px) {
+     .carte {
+         flex: 1 1 25%;
+     }
+    
 }
