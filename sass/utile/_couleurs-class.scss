@@ -1,0 +1,30 @@
+@use "sass-lists";
+
+//création des class des couleurs
+@each $nom, $couleurs in $defaut {
+  @each $valeur, $couleur in $couleurs {
+    .clr-#{$nom}-#{$valeur} {
+      color: #{$couleur};
+    }
+    .bck-#{$nom}-#{$valeur} {
+      background-color: #{$couleur};
+    }
+  }
+}
+
+//definie la regle des styles a partir d'une couleur de tex $clr et d'une couleur de fond $bck
+@mixin couleur-agencement($clr, $bck) {
+  color: $clr;
+  @if (list.length($bck) ==1) {
+    background-color: $bck;
+  } @else {
+    background-image: linear-gradient(90deg, $bck);
+  }
+}
+
+//creation des regle de style d'agencement de couleur
+@each $valeur, $clr in $agencement-couleur {
+  .clr-agencement-#{$valeur} {
+    @include couleur-agencement($clr...);
+  }
+}
