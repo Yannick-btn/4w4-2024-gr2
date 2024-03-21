@@ -1,4 +1,4 @@
-@use "sass-lists";
+@use "sass:list";
 
 //création des class des couleurs
 @each $nom, $couleurs in $defaut {

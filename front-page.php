@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <h2>Front-page.php</h2>
-<div id="entete" class="global">
+<div id="entete" class="global clr-agencement-vert">
     <div class="entete__header">
         <h1 class="bgc-text"><?php echo get_bloginfo('name'); ?></h1>
         <h2 class="bgc-text"><?php echo get_bloginfo('description'); ?></h2>
@@ -33,7 +33,7 @@
                         <h4> <?php the_title() ?> </h4>
                         <p> <?php echo wp_trim_words(get_the_content(), 10); ?> </p>
                         <p> <a href="<?php echo get_permalink(); ?>">La suite</a> </p>
-                        <?php the_category(); ?>
+                        <?php the_category(); ?>    
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
@@ -50,11 +50,24 @@
 <div id="evenement" class="global">
     <section class="evenement__section">
         <h2>Événement</h2>
-        <blockquote class=" general__quote quote_einstein">
-            “La possession de merveilleux moyens de production n’a pas apporté la liberté, mais le souci et la famine.”
-            - Albert Einstein
-        </blockquote>
-        <button class="entete__button">Appuyer pour des chocolats</button>
+        <div class="section__cours">
+    <?php 
+    $categories = get_categories();
+    foreach ($categories as $categorie) {
+        $description = wp_trim_words($categorie->description, 10);
+        $link = get_category_link($categorie->term_id);
+        $post_count = $categorie->count;
+    ?>
+    <div class="carte">
+        <h4><?php echo $categorie->name; ?></h4>
+        <p><?php echo $description; ?></p>
+        <p>Articles: <?php echo $post_count; ?></p>
+        <a href="<?php echo $link; ?>">Voir la catégorie</a>
+    </div>
+    <?php } ?>
+</div>
+            
+        
     </section>
     <?php get_template_part("gabarits/vague"); ?>
 </div>

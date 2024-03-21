@@ -53,11 +53,6 @@
     <div id="evenement" class="global">
         <section class="evenement__section">
             <h2>Événement</h2>
-            <blockquote class=" general__quote quote_einstein">
-                “La possession de merveilleux moyens de production n’a pas apporté la liberté, mais le souci et la famine.”
-                - Albert Einstein
-            </blockquote>
-            <button class="entete__button">Appuyer pour des chocolats</button>
         </section>
         <?php get_template_part("gabarits/vague"); ?>
     </div>

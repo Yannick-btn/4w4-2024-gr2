@@ -21,20 +21,67 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 /*Définition des variables de couleur pour la palette de couleur*/
 /* creation du mapping des couleurs */
+:root {
+  --nb-element: 5;
+  --increment-angle: calc(300 / var(--nb-element));
+  --angle-initial: 180;
+  --hu1: var(--angle-initial);
+  --hu2: calc(var(--hu1) + var(--increment-angle));
+  --hu3: calc(var(--hu2) + var(--increment-angle));
+  --hu4: calc(var(--hu3) + var(--increment-angle));
+  --hu5: calc(var(--hu4) + var(--increment-angle));
+  /* couleur arriere plan */
+  --s-couleur-arriere: 100%;
+  --l-couleur-arriere: 50%;
+  /* couleur avant plant */
+  --s-couleur: 100%;
+  --l-couleur: 80%;
+  --couleur-lien: #851919;
+  --coulleur-rose: #cc1cc3;
+  --hu2: calc(var(--hu1) + 180);
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 90%);
+  --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), 90%);
+  --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 90%);
+  --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), 90%);
+  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), 90%);
+  --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+  --couleur-accueil: hsl(var(--hu2), var(--s-couleur-arriere), 35%);
+  --couleur-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 40%);
+  --couleur-galerie: hsl(var(--hu4), var(--s-couleur-arriere), 45%);
+  --couleur-footer: hsl(var(--hu5), var(--s-couleur-arriere), 50%);
+  --couleur-lien: #c81415;
+  --couleur-lien-hover: #cf6412;
+  --couleur-lien-visited: #e2ab3c;
+  --couleur-bouton: #2ba0c8;
+  --couleur-bouton-suite: #df98df;
+  --couleur-bouton-hover: #e2aabe;
+  --couleur-bouton-suite-hover: #e2daa3;
+  --couleur-bouton-visited: #e2daa3;
+  --couleur-bouton-suite-visited: #e9e8be;
+}
+
+#entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+
+#evenement {
+  --_couleur-arriere-vague:var(--couleur-arriere-footer);
+}
+
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: #8dc6ff;
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: #8dc6ff;
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: #8594e4;
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: #8594e4;
 }
 
 .clr-primaire-300 {
@@ -118,19 +165,19 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 .clr-vert-100 {
-  color: hsl(70, 100%, 85%);
+  color: #edb1f1;
 }
 
 .bck-vert-100 {
-  background-color: hsl(70, 100%, 85%);
+  background-color: #edb1f1;
 }
 
 .clr-vert-200 {
-  color: hsl(70, 100%, 50%);
+  color: #d59bf6;
 }
 
 .bck-vert-200 {
-  background-color: hsl(70, 100%, 50%);
+  background-color: #d59bf6;
 }
 
 .clr-vert-300 {
@@ -151,7 +198,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 
 .clr-agencement-primaire {
   color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  background-image: linear-gradient(90deg, #8dc6ff, #8594e4);
 }
 
 .clr-agencement-secondaire {
@@ -166,54 +213,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 
 .clr-agencement-vert {
   color: hsl(70, 100%, 15%);
-  background-color: hsl(70, 100%, 85%);
-}
-
-:root {
-  --nb-element: 5;
-  --increment-angle: calc(300 / var(--nb-element));
-  --angle-initial: 180;
-  --hu1: var(--angle-initial);
-  --hu2: calc(var(--hu1) + var(--increment-angle));
-  --hu3: calc(var(--hu2) + var(--increment-angle));
-  --hu4: calc(var(--hu3) + var(--increment-angle));
-  --hu5: calc(var(--hu4) + var(--increment-angle));
-  /* couleur arriere plan */
-  --s-couleur-arriere: 100%;
-  --l-couleur-arriere: 50%;
-  /* couleur avant plant */
-  --s-couleur: 100%;
-  --l-couleur: 80%;
-  --couleur-lien: #851919;
-  --coulleur-rose: #cc1cc3;
-  --hu2: calc(var(--hu1) + 180);
-  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 90%);
-  --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), 90%);
-  --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 90%);
-  --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), 90%);
-  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), 90%);
-  --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 30%);
-  --couleur-accueil: hsl(var(--hu2), var(--s-couleur-arriere), 35%);
-  --couleur-evenement: hsl(var(--hu3), var(--s-couleur-arriere), 40%);
-  --couleur-galerie: hsl(var(--hu4), var(--s-couleur-arriere), 45%);
-  --couleur-footer: hsl(var(--hu5), var(--s-couleur-arriere), 50%);
-  --couleur-lien: #c81415;
-  --couleur-lien-hover: #cf6412;
-  --couleur-lien-visited: #e2ab3c;
-  --couleur-bouton: #2ba0c8;
-  --couleur-bouton-suite: #df98df;
-  --couleur-bouton-hover: #e2aabe;
-  --couleur-bouton-suite-hover: #e2daa3;
-  --couleur-bouton-visited: #e2daa3;
-  --couleur-bouton-suite-visited: #e9e8be;
-}
-
-#entete {
-  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
-}
-
-#evenement {
-  --_couleur-arriere-vague:var(--couleur-arriere-footer);
+  background-image: linear-gradient(90deg, #edb1f1, #d59bf6);
 }
 
 /* ////////////////////////////////////////// */
@@ -269,7 +269,6 @@ body {
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
   position: relative;
 }
 

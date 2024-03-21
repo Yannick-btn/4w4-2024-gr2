@@ -5,8 +5,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 /*Définition des variables de couleur pour la palette de couleur*/
 
-$--clr-bleu-pale    : hsl(220, 100%, 85%);
-$--clr-bleu-leger  : hsl(220, 100%, 60%);
+$--clr-bleu-pale   : #8dc6ff;
+$--clr-bleu-leger  : #8594e4;
 $--clr-bleu-moyen  : hsl(220, 100%, 30%);    
 $--clr-bleu-fonce  : hsl(220, 100%, 15%);
 
@@ -21,8 +21,8 @@ $--clr-rouge-leger  : hsl(10, 100%, 50%);
 $--clr-rouge-moyen  : hsl(10, 100%, 30%);
 $--clr-rouge-fonce  : hsl(10, 100%, 15%);
 
-$--clr-vert-pale: hsl(70, 100%, 85%);
-$--clr-vert-leger  : hsl(70, 100%, 50%);
+$--clr-vert-pale   : #edb1f1;
+$--clr-vert-leger  : #d59bf6;
 $--clr-vert-moyen  : hsl(70, 100%, 30%);
 $--clr-vert-fonce  : hsl(70, 100%, 15%);
 
@@ -61,7 +61,7 @@ $defaut: (
     primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
-    vert: ($--clr-vert-fonce, $--clr-vert-pale)
+    vert: ($--clr-vert-fonce, ($--clr-vert-pale, $--clr-vert-leger))
 );
 
 
